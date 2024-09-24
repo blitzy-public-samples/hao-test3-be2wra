@@ -1,0 +1,102 @@
+/* Main stylesheet for the Hello World web application */
+
+/* Global variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #333333;
+  --font-family: 'Arial', sans-serif;
+}
+
+/* Body styles */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Logo styles */
+.logo {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Main content area styles */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Date display styles */
+#date-display {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Refresh button styles */
+#refresh-button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#refresh-button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+#refresh-button:focus {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  #date-display {
+    font-size: 1.2rem;
+  }
+}
+
+/* Human tasks:
+1. Review color scheme and adjust if necessary for better contrast and accessibility
+2. Test responsive design on various devices and screen sizes
+3. Optimize CSS for performance (e.g., combining selectors, removing unused styles)
+4. Ensure all interactive elements have appropriate hover and focus states
+5. Validate CSS against W3C standards
+6. Consider adding print styles if required
+*/
