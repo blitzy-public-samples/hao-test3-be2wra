@@ -1,0 +1,50 @@
+{
+  "name": "hello-world-web-app",
+  "version": "1.0.0",
+  "description": "A simple Hello World web application that displays the current date and time",
+  "main": "scripts/main.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "test": "jest",
+    "lint": "eslint . && stylelint '**/*.css'",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/hello-world-web-app.git"
+  },
+  "keywords": [
+    "hello-world",
+    "web-app",
+    "date-time"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/hello-world-web-app/issues"
+  },
+  "homepage": "https://github.com/yourusername/hello-world-web-app#readme",
+  "dependencies": {
+    "date-fns": "^2.29.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.32.0",
+    "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "style-loader": "^3.2.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
