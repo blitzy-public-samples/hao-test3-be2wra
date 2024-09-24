@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "allowJs": true,
+    "checkJs": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
+
+// Human tasks:
+// - Review and adjust TypeScript compiler options based on project requirements
+// - Decide whether to enable strict mode and other type-checking options
+// - Configure paths for any module aliases used in the project
+// - Ensure the TypeScript configuration aligns with the project's ESLint and Babel setups
+// - Update the README.md to include information about TypeScript usage in the project
+// - Consider setting up @types declarations for libraries without built-in TypeScript support
+// - Test the TypeScript configuration with sample TypeScript files to ensure proper compilation
