@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <meta name="description" content="A simple Hello World web application that displays the current date and time.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Hello World</h1>
+        <img src="assets/logo.svg" alt="Hello World Logo" class="logo">
+    </header>
+
+    <main>
+        <p id="date-display" aria-live="polite"></p>
+        <button id="refresh-button" type="button">Refresh Date</button>
+    </main>
+
+    <footer>
+        <p>© 2023 Hello World App. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/date-fns.min.js"></script>
+    <script src="scripts/dateManager.js"></script>
+    <script src="scripts/uiManager.js"></script>
+    <script src="scripts/appController.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
