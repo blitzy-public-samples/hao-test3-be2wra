@@ -1,0 +1,23 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "defaultCommandTimeout": 5000,
+  "execTimeout": 60000,
+  "taskTimeout": 60000,
+  "pageLoadTimeout": 30000,
+  "requestTimeout": 5000,
+  "responseTimeout": 30000,
+  "video": true,
+  "screenshotOnRunFailure": true,
+  "trashAssetsBeforeRuns": true,
+  "chromeWebSecurity": false,
+  "watchForFileChanges": true,
+  "testFiles": "**/*.spec.js",
+  "integrationFolder": "tests/e2e/specs",
+  "fixturesFolder": "tests/e2e/fixtures",
+  "supportFile": "tests/e2e/support/index.js",
+  "pluginsFile": "tests/e2e/plugins/index.js",
+  "screenshotsFolder": "tests/e2e/screenshots",
+  "videosFolder": "tests/e2e/videos"
+}
