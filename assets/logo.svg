@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" aria-labelledby="logoTitle logoDesc" role="img">
+  <title id="logoTitle">Hello World Logo</title>
+  <desc id="logoDesc">A stylized 'Hello World' text with a simple globe icon</desc>
+  
+  <!-- Globe icon -->
+  <circle cx="30" cy="50" r="25" fill="#6c757d"/>
+  <path d="M5 50 Q30 20 55 50 Q30 80 5 50" fill="none" stroke="#007bff" stroke-width="2"/>
+  <path d="M30 25 Q30 75 30 75" fill="none" stroke="#007bff" stroke-width="2"/>
+  
+  <!-- Stylized 'Hello World' text -->
+  <text x="70" y="60" font-family="Arial, sans-serif" font-size="24" fill="#007bff">
+    Hello World
+  </text>
+  
+  <!-- Responsive behavior -->
+  <style>
+    @media (max-width: 200px) {
+      text { font-size: 18px; }
+    }
+    @media (max-width: 150px) {
+      text { font-size: 14px; }
+    }
+  </style>
+</svg>
